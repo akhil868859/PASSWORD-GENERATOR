@@ -1,0 +1,79 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  margin: 50px auto;
+  width: 80%;
+  max-width: 500px;
+  animation: float 4s ease-in-out infinite, fadeIn 2s ease forwards;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.7);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #00f0ff;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #1e1e2f;
+  background: #00f0ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #00c2d1;
+}
+
+.password-output {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-break: break-word;
+  word-wrap: break-word;
+  background: rgba(0, 240, 255, 0.1);
+  border: 2px solid #00f0ff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
